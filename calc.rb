@@ -8,6 +8,10 @@ end
 
 def set_calc(numbers,operators,groups)
   result = operators.map { |i| numbers[0].to_i.method(i).(numbers[1].to_i) }
+  print_result(result)
+end
+
+def print_result(result)
   puts "The answer is #{result[0]}"
 end
 
